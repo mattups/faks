@@ -1,5 +1,7 @@
 # Local .terraform directories
 **/.terraform/*
+**/.terraform
+*.terraform.lock*
 
 # .tfstate files
 *.tfstate
@@ -7,6 +9,7 @@
 
 # Crash log files
 crash.log
+crash.*.log
 
 # Ignore any .tfvars files that are generated automatically for each Terraform run. Most
 # .tfvars files are managed as part of configuration and so should be included in
@@ -27,3 +30,19 @@ override.tf.json
 
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
 # example: *tfplan*
+
+.terraformrc
+terraform.rc
+
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+.history/
+*.vsix
+
+/config.sh
